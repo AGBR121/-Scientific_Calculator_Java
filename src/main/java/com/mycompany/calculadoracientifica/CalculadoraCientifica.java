@@ -11,6 +11,7 @@ package com.mycompany.calculadoracientifica;
 public class CalculadoraCientifica {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Pantalla pantalla = new Pantalla();
+        pantalla.setVisible(true);
     }
 }

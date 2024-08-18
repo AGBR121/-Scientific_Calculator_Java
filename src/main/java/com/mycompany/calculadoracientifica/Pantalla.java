@@ -405,7 +405,7 @@ public class Pantalla extends javax.swing.JFrame {
         if ("Syntax Error".equals(txt_Visor.getText())){
             txt_Visor.setText("1");
 }else{
-      txt_Visor.setText(txt_Visor.getText()+"1");
+       txt_Visor.setText(txt_Visor.getText()+"1");
         }
         
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -461,9 +461,13 @@ public class Pantalla extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         String text = txt_Visor.getText();
         if (text.length() > 0) {
+            if("Syntax Error".equals(text)){
+                txt_Visor.setText("");
+            }else{
           text = text.substring(0, text.length() - 1);
           txt_Visor.setText(text);
-}
+            }
+       }
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
